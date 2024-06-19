@@ -4,7 +4,7 @@ import {Link, router} from "expo-router";
 const Userpage = () => {
     return (
     <View>
-        <Link href={'Carpool/Nexus-Carpool/app/index.js:'}>
+        <Link href={'index'}>
         <Text>Second Page</Text>
         </Link>
     </View>)
