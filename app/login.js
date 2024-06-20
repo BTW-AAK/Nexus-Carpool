@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Pressable, Image, Button } from "react-native";
+import { StyleSheet, Text, View, Pressable, Image, Button, TextInput } from "react-native";
 import {Link, router} from "expo-router";
 import {  useFonts, Poppins_900Black, Poppins_600SemiBold, Poppins_700Bold, Poppins_500Medium  } from '@expo-google-fonts/poppins';
 
@@ -14,6 +14,19 @@ const Userpage = () => {
   <Text style={styles.BrandName}>Welcome Back</Text>
 <Image source={{uri: 'https://drive.usercontent.google.com/download?id=1fTe9ASE-Tj8EJW3NIu2kebIG1ODXshRy'}}
        style={{width: 380, height: 380, paddingTop:0}} />
+
+
+<TextInput
+        placeholder="Username"
+        style={styles.LoginInput}
+      />
+      <TextInput
+        placeholder="Password"
+        secureTextEntry
+        style={styles.LoginInput}
+      />
+      <Button title="Sign in" onPress={() => signIn({ username, password })} />
+
 
     </View>)
 }
@@ -73,6 +86,23 @@ const styles = StyleSheet.create({
   color: '#ffffff',
   fontFamily: 'Poppins_600SemiBold', fontSize:32,
   fontSize: 20,
+    },
+    LoginInput: {
+
+        width: '100%',
+    height: 50,
+    paddingHorizontal: 16,
+    borderRadius: 25,
+    backgroundColor: '#f5f5f5',
+    fontSize: 16,
+    color: '#333',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+    margin: 15
+
     }
   });
   
