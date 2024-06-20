@@ -4,16 +4,6 @@ import {  useFonts, Poppins_900Black, Poppins_600SemiBold, Poppins_700Bold, Popp
 
 
 export default function Page() {
-  // return (
-  //   <View style={styles.container}>
-  //     <View style={styles.main}>
-  //     <Link href={'page1'}>
-  //       <Text style={styles.title}>Hello World</Text>
-  //       </Link>
-  //       <Text style={styles.subtitle}>This is the first page of your app.</Text>
-  //     </View>
-  //   </View>
-  // );
   let [fontsLoaded] = useFonts({
     Poppins_900Black, Poppins_500Medium, Poppins_600SemiBold, Poppins_700Bold
   });
@@ -26,16 +16,15 @@ export default function Page() {
 
     <View style={styles.container}>
           <View style={styles.header}>
-    <Image source={{uri: 'https://media.discordapp.net/attachments/1252659588638179519/1252887903974199376/logo-placeholder-image.png?ex=6673da49&is=667288c9&hm=eefc929b15e1e5748625806b8f0aae8f8afc00ab5c90fa379e44e25ba675a822&=&format=webp&quality=lossless'}}
+    <Image source={{uri: 'https://drive.usercontent.google.com/download?id=1v3puPD0znpb2FjYcDVEuJ2YLR4XmUJHg'}}
        style={styles.logo} />
 
 <Text style={styles.BrandName}> Nexus</Text>
 
   </View>
 
-<Image source={{uri: 'https://cdn.discordapp.com/attachments/1252659588638179519/1252872011911266355/Onboarding_image.png?ex=6673cb7c&is=667279fc&hm=0367a4699cd1515afcc6c13dfa1de1f982b2da3e01ab833c35ab6ecef3c331cc&'}}
+<Image source={{uri: 'https://drive.usercontent.google.com/download?id=19OLVq7TZuYBrQLwao1dhfsJdPy4IKQTx'}}
        style={{width: 380, height: 380, paddingTop:0}} />
-
 
 <Text style={{fontFamily: 'Poppins_600SemiBold', fontSize:38, color: '#000000'}}>Welcome to{"\n"}     Nexus!</Text>
 <Text style={{fontFamily: 'Poppins_500Medium', fontSize:16, textAlign: 'center', paddingTop: 15}}>
